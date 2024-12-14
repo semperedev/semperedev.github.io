@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <!--
   Identity by HTML5 UP
@@ -6,56 +6,85 @@
 -->
 
 <html>
-<head>
-  <title>Paula Sempere</title>
+  <head>
+    <title>Paula Sempere</title>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+      <style>
+        body:after {
+          display: none;
+        }
 
-  <link href="favicon.ico" rel="icon" type="image/x-icon" />
-</head>
+        #main {
+          transform: none !important;
+          opacity: 1 !important;
+        }
+      </style>
+    </noscript>
 
-<body class="is-loading">
-  <div id="wrapper">
-    <section id="main">
-      <header>
-        <span class="avatar"><img src="images/virtual-avatar.png" alt="Paula Sempere" /></span>
-        <h1>Paula Sempere</h1>
-        <p>Software Engineer, Cybersecurity Consultant</p>
-      </header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-      <footer>
-        <ul class="icons">
-          <li><a href="https://www.github.com/semperedev" class="fa-github" target="_blank">Github</a></li>
-          <li><a href="https://wiki.sempere.dev/" class="fa-wikipedia-w" target="_blank">WikiCueva</a></li>
-          <li><a href="https://www.twitter.com/p_sempere" class="fa-twitter" target="_blank">Twitter</a></li>
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body class="is-loading">
+    <div id="wrapper">
+      <section id="main">
+        <header>
+          <span class="avatar">
+            <img src="images/virtual-avatar.png" alt="Paula Sempere" />
+          </span>
+          <h1>Paula Sempere</h1>
+          <p>Software Engineer, Cybersecurity Consultant</p>
+        </header>
+
+        <footer>
+          <ul class="icons">
+            <li>
+              <a href="https://github.com/semperedev" class="fas fa-github">
+                Github
+              </a>
+            </li>
+            <li>
+              <a href="https://wiki.sempere.dev/" class="fas fa-wikipedia-w">
+                WikiCueva
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cartas.sempere.dev/"
+                class="far fa-face-laugh-squint"
+              >
+                Cartas
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </section>
+
+      <footer id="footer">
+        <ul class="copyright">
+          <li>
+            Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
+          </li>
         </ul>
       </footer>
-    </section>
+    </div>
 
-    <footer id="footer">
-      <ul class="copyright">
-        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-      </ul>
-    </footer>
-  </div>
-
-  <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-
-  <script>
-    if ('addEventListener' in window) {
-      window.addEventListener('load', function() {
-        document.body.className = document.body.className.replace(/\bis-loading\b/, '');
-      });
-
-      document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-    }
-  </script>
-</body>
+    <script>
+      window.addEventListener("load", () =>
+        document.body.classList.remove("is-loading")
+      );
+    </script>
+  </body>
 </html>
